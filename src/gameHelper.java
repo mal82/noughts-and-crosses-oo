@@ -11,6 +11,10 @@ public class gameHelper {
 		board = new gameBoard();
 	}
 	
+	public void sayHello(){
+		System.out.println("Hello!");
+	}
+	
 	public char getWinner(){
 		return board.getWinner();
 	}
