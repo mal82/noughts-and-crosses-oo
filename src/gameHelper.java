@@ -3,18 +3,16 @@ import java.util.Scanner;
 public class gameHelper {
 	
 	
-	
 	gameBoard board;	
 	
 	
-	
+	// Constructor sets up the board
+	public gameHelper() {
+		board = new gameBoard();
+	}
 	
 	public void sayHello(){
 		System.out.println("Hello!");
-	}
-	
-	public gameHelper() {
-		board = new gameBoard();
 	}
 	
 	public char getWinner(){
@@ -30,6 +28,8 @@ public class gameHelper {
 	}
 	
 	
+	// method to obtain player X turn location and update board
+	// method ensures a valid entry
 	
 	public void playerXTurn(){
 		
@@ -71,6 +71,9 @@ public class gameHelper {
 		
 	}
 	
+	// method to obtain player O turn location and update board
+	// method ensures a valid entry
+	
 	public void playerOTurn(){
 		
 		int[] location = new int[2];
@@ -111,7 +114,7 @@ public class gameHelper {
 		
 	}
 	
-	
+	// method for win check, returns true/false
 
 	public boolean checkIfWin(){
 		for(int i = 0; i<3; i++){
@@ -137,6 +140,8 @@ public class gameHelper {
 		return false;
 	}
 	
+	
+	// method for draw check, returns true/false
 	
 	public boolean checkIfDraw(){
 		
