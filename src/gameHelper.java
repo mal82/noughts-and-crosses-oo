@@ -8,6 +8,11 @@ public class gameHelper {
 	
 	
 	
+	
+	public void sayHello(){
+		System.out.println("Hello!");
+	}
+	
 	public gameHelper() {
 		board = new gameBoard();
 	}
