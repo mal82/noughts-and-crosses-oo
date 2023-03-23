@@ -4,10 +4,13 @@ public class gameLogic {
 	
 	private gameHelper helper;
 	
+	//Constructor creates the game helper
 	public gameLogic() {
 		helper = new gameHelper();
 	}
 	
+	
+	// method for game logic to conclusion of game
 	public void runGame(){
 		
 		helper.drawBoard();

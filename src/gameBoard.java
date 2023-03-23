@@ -1,6 +1,12 @@
 
 public class gameBoard {
 
+	
+	/*
+	 * gameBoard contains 2-d array to store state of board
+	 * gameBoard stores winner id as a char
+	 */
+	
 	private char[][] board;
 	private char winner;
 	
@@ -9,6 +15,9 @@ public class gameBoard {
 		
 		
 	}
+	
+	
+	// Getters and Setters
 	
 	public void setWinner(char winner){
 		this.winner = winner;
@@ -21,6 +30,9 @@ public class gameBoard {
 	public char getCellContents(int row, int col){
 		return this.board[row][col];
 	}
+	
+	
+	// Method to draw the board
 	
 	public void drawBoard(){
 		for(int row = 0; row < 3; row++){
@@ -36,6 +48,9 @@ public class gameBoard {
 			}
 		}
 	}
+	
+	
+	// Methods for updating the board after a move
 	
 	public void updateBoardX(int [] location){
 		board[location[1]][location[0]] = 'x';
